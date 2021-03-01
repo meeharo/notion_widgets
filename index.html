@@ -38,10 +38,10 @@ h1 {
 .card {
     padding: 10px 25px 10px 25px;
     border-radius: 10px;
-    background: #009688;
-    color: #fff;
+    background: #DCCCC0;
+    color: #594A47;
     display: inline-block;
-    box-shadow: 2px 2px 1px 0px #295C7B;
+    box-shadow: 2px 2px 1px 0px #DCCCC0;
 }
 
 .card:hover {
@@ -72,7 +72,7 @@ h1 {
     min-width: 162px;
     /* padding-right: 30px; */
     /* border-right: 2px solid #295C7B; */
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Playlist Script', sans-serif;
     font-size: 1.2em;
 }
 .greet{
@@ -126,11 +126,11 @@ else{
 }
 hrs = today.getHours();
 if (hrs < 12)
-        greet = 'Good Morning  ';
+        greet = 'Good Morning,meeharo_ ';
     else if (hrs >= 12 && hrs <= 17)
-        greet = 'Good Afternoon ';
+        greet = 'Good Afternoon,meeharo_ ';
     else if (hrs >= 17 && hrs <= 24)
-        greet = 'Good Evening  ';
+        greet = 'Good Evening,meeharo_  ';
 // console.log(today.toLocaleTimeString());
 document.getElementById('greet').innerHTML = greet;
 document.getElementById('hour').innerHTML = hour;
@@ -139,12 +139,9 @@ document.getElementById('sec').innerHTML = seconds;
 }
 
 function twelveHour(hour) {
-if (hour > 12) {
-    return hour -= 12 
-} else if (hour === 0) {
-    return hour = 12;
-} else {
-    return hour
+if (hour > 24) {
+    return hour -= 0 
+
 }
 }
 // adds zero infront of single digit number
